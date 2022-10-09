@@ -1,0 +1,11 @@
+<h1>Users info</h1>
+<%= form_with model: @user do |f| %>
+  <label for="inputName">Name</label><br>
+  <%= f.text_field :name %><br>
+  <label for="inputImage">Image</label><br>
+  <%= f.file_field :image, accept: "image/*" %><br>
+  <label for="inputIntroduction">Introduction</label><br>
+  <%= f.text_area :introduction %><br>
+
+  <%= f.submit "Upadatte User" %>
+<% end %>

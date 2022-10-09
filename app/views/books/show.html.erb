@@ -1,0 +1,18 @@
+<%= render 'users/userinfo', user: @user %>
+
+<h2>Books detail</h2>
+
+<p>
+  <%= link_to user_path(@book.user_id) do %>
+  <%= image_tag @book.user.get_profile_image(100,100) %>
+  <% end %>
+</p>
+
+<p>
+  <%= link_to @book.title, book_path(@book.id) %>
+</p>
+
+<p>
+  <%= @book.opinion %>
+</p>
+
