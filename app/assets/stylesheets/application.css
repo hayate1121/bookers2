@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+.bg-dark {
+  background-color: #343a40;
+}
+
+.navbar-expand-lg {
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0.5rem 1rem
+}
+
+.container {
+  flex-wrap: nowrap;
+}

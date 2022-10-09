@@ -12,6 +12,8 @@
 
   <body>
     <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
       <ul>
         <%= link_to "Booker", root_path %>
       </ul>
@@ -42,6 +44,8 @@
         <%= link_to "Log in", new_user_session_path %>
       </ul>
     <% end %>
+        </div>
+      </nav>
     </header>
     <body>
       <% if flash[:notice] %>
